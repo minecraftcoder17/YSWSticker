@@ -30,6 +30,15 @@
             block-size 0.2s ease,
             content-visibility 0.2s;
           transition-behavior: allow-discrete;
+}   
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1300px) {
+  .desktop {
+    display: block;
+  }
 }
 
 details[open]::details-content {
@@ -41,7 +50,7 @@ details[open]::details-content {
 </head>
 <body>
 <div>
-  <a href="https://hackclub.com" scale="500%"><img src="https://user-cdn.hackclub-assets.com/019d730b-8eb6-7050-9ba5-cd9ed9949958/Ud0ZsmQ08LUg6Zdz1UiAoqUSrP9VXz19VGWb4ZL-nJs" style="max-width: 130%; position: absolute; top: 0; left: 20px; margin: 0;  filter: drop-shadow(10px 10px 5px rgba(16, 0, 43, 0.568));"></a>
+  <a href="https://hackclub.com" scale="500%" class="desktop"><img src="https://user-cdn.hackclub-assets.com/019d730b-8eb6-7050-9ba5-cd9ed9949958/Ud0ZsmQ08LUg6Zdz1UiAoqUSrP9VXz19VGWb4ZL-nJs" style="max-width: 130%; position: absolute; top: 0; left: 20px; margin: 0;  filter: drop-shadow(10px 10px 5px rgba(16, 0, 43, 0.568));"></a>
 
 <div style="display: flex; text-align: center; align-items: center; gap: 15px; justify-content: center;">
 
